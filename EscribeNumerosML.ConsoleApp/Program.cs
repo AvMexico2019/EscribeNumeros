@@ -11,18 +11,50 @@ namespace EscribeNumerosML.ConsoleApp
     class Program
     {
         //Dataset to use for predictions 
-        private const string DATA_FILEPATH = @"C:\Users\desa21\source\repos\EscribeNumeros\OtroML\datos.csv";
+        private const string DATA_FILEPATH = @"C:\Users\desa21\source\repos\EscribeNumeros\datos.csv";
 
         static void Main(string[] args)
         {
             // Create single instance of sample data from first line of dataset for model input
             ModelInput sampleData = CreateSingleDataSample(DATA_FILEPATH);
-            sampleData.Numero = 200;
+
             // Make a single prediction on the sample data and print results
             ModelOutput predictionResult = ConsumeModel.Predict(sampleData);
 
             Console.WriteLine("Using model to make single prediction -- Comparing actual Numero with predicted Numero from sample data...\n\n");
-            Console.WriteLine($"letras: {sampleData.Letras}");
+            Console.WriteLine($"l1: {sampleData.L1}");
+            Console.WriteLine($"l2: {sampleData.L2}");
+            Console.WriteLine($"l3: {sampleData.L3}");
+            Console.WriteLine($"l4: {sampleData.L4}");
+            Console.WriteLine($"l5: {sampleData.L5}");
+            Console.WriteLine($"l6: {sampleData.L6}");
+            Console.WriteLine($"l7: {sampleData.L7}");
+            Console.WriteLine($"l8: {sampleData.L8}");
+            Console.WriteLine($"l9: {sampleData.L9}");
+            Console.WriteLine($"l10: {sampleData.L10}");
+            Console.WriteLine($"l11: {sampleData.L11}");
+            Console.WriteLine($"l12: {sampleData.L12}");
+            Console.WriteLine($"l13: {sampleData.L13}");
+            Console.WriteLine($"l14: {sampleData.L14}");
+            Console.WriteLine($"l15: {sampleData.L15}");
+            Console.WriteLine($"l16: {sampleData.L16}");
+            Console.WriteLine($"l17: {sampleData.L17}");
+            Console.WriteLine($"l18: {sampleData.L18}");
+            Console.WriteLine($"l19: {sampleData.L19}");
+            Console.WriteLine($"l20: {sampleData.L20}");
+            Console.WriteLine($"l21: {sampleData.L21}");
+            Console.WriteLine($"l22: {sampleData.L22}");
+            Console.WriteLine($"l23: {sampleData.L23}");
+            Console.WriteLine($"l24: {sampleData.L24}");
+            Console.WriteLine($"l25: {sampleData.L25}");
+            Console.WriteLine($"l26: {sampleData.L26}");
+            Console.WriteLine($"l27: {sampleData.L27}");
+            Console.WriteLine($"l28: {sampleData.L28}");
+            Console.WriteLine($"l29: {sampleData.L29}");
+            Console.WriteLine($"l30: {sampleData.L30}");
+            Console.WriteLine($"l31: {sampleData.L31}");
+            Console.WriteLine($"l32: {sampleData.L32}");
+            Console.WriteLine($"l33: {sampleData.L33}");
             Console.WriteLine($"\n\nActual Numero: {sampleData.Numero} \nPredicted Numero: {predictionResult.Score}\n\n");
             Console.WriteLine("=============== End of process, hit any key to finish ===============");
             Console.ReadKey();

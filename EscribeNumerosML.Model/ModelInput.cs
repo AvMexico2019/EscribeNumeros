@@ -10,8 +10,136 @@ namespace EscribeNumerosML.Model
         public float Numero { get; set; }
 
 
-        [ColumnName("letras"), LoadColumn(1)]
-        public string Letras { get; set; }
+        [ColumnName("l1"), LoadColumn(1)]
+        public string L1 { get; set; }
+
+
+        [ColumnName("l2"), LoadColumn(2)]
+        public string L2 { get; set; }
+
+
+        [ColumnName("l3"), LoadColumn(3)]
+        public string L3 { get; set; }
+
+
+        [ColumnName("l4"), LoadColumn(4)]
+        public string L4 { get; set; }
+
+
+        [ColumnName("l5"), LoadColumn(5)]
+        public string L5 { get; set; }
+
+
+        [ColumnName("l6"), LoadColumn(6)]
+        public string L6 { get; set; }
+
+
+        [ColumnName("l7"), LoadColumn(7)]
+        public string L7 { get; set; }
+
+
+        [ColumnName("l8"), LoadColumn(8)]
+        public string L8 { get; set; }
+
+
+        [ColumnName("l9"), LoadColumn(9)]
+        public string L9 { get; set; }
+
+
+        [ColumnName("l10"), LoadColumn(10)]
+        public float L10 { get; set; }
+
+
+        [ColumnName("l11"), LoadColumn(11)]
+        public float L11 { get; set; }
+
+
+        [ColumnName("l12"), LoadColumn(12)]
+        public float L12 { get; set; }
+
+
+        [ColumnName("l13"), LoadColumn(13)]
+        public float L13 { get; set; }
+
+
+        [ColumnName("l14"), LoadColumn(14)]
+        public float L14 { get; set; }
+
+
+        [ColumnName("l15"), LoadColumn(15)]
+        public float L15 { get; set; }
+
+
+        [ColumnName("l16"), LoadColumn(16)]
+        public float L16 { get; set; }
+
+
+        [ColumnName("l17"), LoadColumn(17)]
+        public float L17 { get; set; }
+
+
+        [ColumnName("l18"), LoadColumn(18)]
+        public float L18 { get; set; }
+
+
+        [ColumnName("l19"), LoadColumn(19)]
+        public float L19 { get; set; }
+
+
+        [ColumnName("l20"), LoadColumn(20)]
+        public float L20 { get; set; }
+
+
+        [ColumnName("l21"), LoadColumn(21)]
+        public float L21 { get; set; }
+
+
+        [ColumnName("l22"), LoadColumn(22)]
+        public float L22 { get; set; }
+
+
+        [ColumnName("l23"), LoadColumn(23)]
+        public float L23 { get; set; }
+
+
+        [ColumnName("l24"), LoadColumn(24)]
+        public float L24 { get; set; }
+
+
+        [ColumnName("l25"), LoadColumn(25)]
+        public float L25 { get; set; }
+
+
+        [ColumnName("l26"), LoadColumn(26)]
+        public float L26 { get; set; }
+
+
+        [ColumnName("l27"), LoadColumn(27)]
+        public float L27 { get; set; }
+
+
+        [ColumnName("l28"), LoadColumn(28)]
+        public float L28 { get; set; }
+
+
+        [ColumnName("l29"), LoadColumn(29)]
+        public float L29 { get; set; }
+
+
+        [ColumnName("l30"), LoadColumn(30)]
+        public float L30 { get; set; }
+
+
+        [ColumnName("l31"), LoadColumn(31)]
+        public float L31 { get; set; }
+
+
+        [ColumnName("l32"), LoadColumn(32)]
+        public float L32 { get; set; }
+
+
+        [ColumnName("l33"), LoadColumn(33)]
+        public float L33 { get; set; }
 
 
     }

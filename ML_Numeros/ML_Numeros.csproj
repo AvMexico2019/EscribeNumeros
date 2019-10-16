@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{04BB1644-25E5-4987-86D0-75A26077C48C}</ProjectGuid>
+    <ProjectGuid>{D8A78385-4549-4EA3-A2D5-FAA0E4657DBA}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>OtroML</RootNamespace>
-    <AssemblyName>OtroML</AssemblyName>
+    <RootNamespace>ML_Numeros</RootNamespace>
+    <AssemblyName>ML_Numeros</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -47,7 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="datos.csv" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EscribeNumerosML.Model\EscribeNumerosML.Model.csproj">
+      <Project>{3FF45094-6CFF-48AB-9546-4D3E843C36A7}</Project>
+      <Name>EscribeNumerosML.Model</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

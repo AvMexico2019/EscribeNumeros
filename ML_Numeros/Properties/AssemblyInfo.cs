@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("OtroML")]
+[assembly: AssemblyTitle("ML_Numeros")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("OtroML")]
+[assembly: AssemblyProduct("ML_Numeros")]
 [assembly: AssemblyCopyright("Copyright ©  2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("04bb1644-25e5-4987-86d0-75a26077c48c")]
+[assembly: Guid("d8a78385-4549-4ea3-a2d5-faa0e4657dba")]
 
 // Version information for an assembly consists of the following four values:
 //

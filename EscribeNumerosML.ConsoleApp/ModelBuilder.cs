@@ -12,7 +12,7 @@ namespace EscribeNumerosML.ConsoleApp
 {
     public static class ModelBuilder
     {
-        private static string TRAIN_DATA_FILEPATH = @"C:\Users\desa21\source\repos\EscribeNumeros\OtroML\datos.csv";
+        private static string TRAIN_DATA_FILEPATH = @"C:\Users\desa21\source\repos\EscribeNumeros\datos.csv";
         private static string MODEL_FILEPATH = @"../../../../EscribeNumerosML.Model/MLModel.zip";
 
         // Create MLContext to be shared across the model creation workflow objects 
@@ -45,11 +45,13 @@ namespace EscribeNumerosML.ConsoleApp
         public static IEstimator<ITransformer> BuildTrainingPipeline(MLContext mlContext)
         {
             // Data process configuration with pipeline data transformations 
-            var dataProcessPipeline = mlContext.Transforms.Text.FeaturizeText("letras_tf", "letras")
-                                      .Append(mlContext.Transforms.CopyColumns("Features", "letras_tf"));
+            var dataProcessPipeline = mlContext.Transforms.Categorical.OneHotEncoding(new[] { new InputOutputColumnPair("l1", "l1"), new InputOutputColumnPair("l2", "l2"), new InputOutputColumnPair("l3", "l3"), new InputOutputColumnPair("l4", "l4"), new InputOutputColumnPair("l5", "l5"), new InputOutputColumnPair("l6", "l6"), new InputOutputColumnPair("l7", "l7"), new InputOutputColumnPair("l8", "l8"), new InputOutputColumnPair("l9", "l9") })
+                                      .Append(mlContext.Transforms.Concatenate("Features", new[] { "l1", "l2", "l3", "l4", "l5", "l6", "l7", "l8", "l9", "l10", "l11", "l12", "l13", "l14", "l15", "l16", "l17", "l18", "l19", "l20", "l21", "l22", "l23", "l24", "l25", "l26", "l27", "l28", "l29", "l30", "l31", "l32", "l33" }))
+                                      .Append(mlContext.Transforms.NormalizeMinMax("Features", "Features"))
+                                      .AppendCacheCheckpoint(mlContext);
 
             // Set the training algorithm 
-            var trainer = mlContext.Regression.Trainers.LightGbm(labelColumnName: "numero", featureColumnName: "Features");
+            var trainer = mlContext.Regression.Trainers.Sdca(labelColumnName: "numero", featureColumnName: "Features");
             var trainingPipeline = dataProcessPipeline.Append(trainer);
 
             return trainingPipeline;
